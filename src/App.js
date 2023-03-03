@@ -44,8 +44,9 @@ function App() {
       <h1>Weather App</h1>
       <form onSubmit={handleFormSubmit}>
         <input type="text" value={city} required onChange={handleInputChange} placeholder="Enter city name" />
-        <h1 id='warn'>{para}</h1>
+        
         <button type="submit">Search</button>
+<h1 id='warn'>{para}</h1>
       </form>
       {weatherData.name && (
         <div>
